@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A4A8F011D0C8F1800338B9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8F001D0C8F1800338B9C /* main.m */; };
+		9A4A8F041D0C8F1800338B9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8F031D0C8F1800338B9C /* AppDelegate.m */; };
+		9A4A8F071D0C8F1800338B9C /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8F061D0C8F1800338B9C /* MasterViewController.m */; };
+		9A4A8F0A1D0C8F1800338B9C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8F091D0C8F1800338B9C /* DetailViewController.m */; };
+		9A4A8F0D1D0C8F1800338B9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4A8F0B1D0C8F1800338B9C /* Main.storyboard */; };
+		9A4A8F0F1D0C8F1800338B9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4A8F0E1D0C8F1800338B9C /* Assets.xcassets */; };
+		9A4A8F121D0C8F1800338B9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4A8F101D0C8F1800338B9C /* LaunchScreen.storyboard */; };
+		9A4A8F1D1D0C8F1800338B9C /* open_source_osx_ciTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8F1C1D0C8F1800338B9C /* open_source_osx_ciTests.m */; };
+		9A4A8F281D0C8F1800338B9C /* open_source_osx_ciUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A8F271D0C8F1800338B9C /* open_source_osx_ciUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A4A8F191D0C8F1800338B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A4A8EF41D0C8F1800338B9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4A8EFB1D0C8F1800338B9C;
+			remoteInfo = "open-source-osx-ci";
+		};
+		9A4A8F241D0C8F1800338B9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A4A8EF41D0C8F1800338B9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4A8EFB1D0C8F1800338B9C;
+			remoteInfo = "open-source-osx-ci";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A4A8EFC1D0C8F1800338B9C /* open-source-osx-ci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "open-source-osx-ci.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4A8F001D0C8F1800338B9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A4A8F021D0C8F1800338B9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A4A8F031D0C8F1800338B9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A4A8F051D0C8F1800338B9C /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		9A4A8F061D0C8F1800338B9C /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		9A4A8F081D0C8F1800338B9C /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		9A4A8F091D0C8F1800338B9C /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9A4A8F0C1D0C8F1800338B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A4A8F0E1D0C8F1800338B9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A4A8F111D0C8F1800338B9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A4A8F131D0C8F1800338B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4A8F181D0C8F1800338B9C /* open-source-osx-ciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "open-source-osx-ciTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4A8F1C1D0C8F1800338B9C /* open_source_osx_ciTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = open_source_osx_ciTests.m; sourceTree = "<group>"; };
+		9A4A8F1E1D0C8F1800338B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4A8F231D0C8F1800338B9C /* open-source-osx-ciUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "open-source-osx-ciUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4A8F271D0C8F1800338B9C /* open_source_osx_ciUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = open_source_osx_ciUITests.m; sourceTree = "<group>"; };
+		9A4A8F291D0C8F1800338B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A4A8EF91D0C8F1800338B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A8F151D0C8F1800338B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A8F201D0C8F1800338B9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A4A8EF31D0C8F1800338B9C = {
+			isa = PBXGroup;
+			children = (
+				9A4A8EFE1D0C8F1800338B9C /* open-source-osx-ci */,
+				9A4A8F1B1D0C8F1800338B9C /* open-source-osx-ciTests */,
+				9A4A8F261D0C8F1800338B9C /* open-source-osx-ciUITests */,
+				9A4A8EFD1D0C8F1800338B9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A4A8EFD1D0C8F1800338B9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8EFC1D0C8F1800338B9C /* open-source-osx-ci.app */,
+				9A4A8F181D0C8F1800338B9C /* open-source-osx-ciTests.xctest */,
+				9A4A8F231D0C8F1800338B9C /* open-source-osx-ciUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A4A8EFE1D0C8F1800338B9C /* open-source-osx-ci */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8F021D0C8F1800338B9C /* AppDelegate.h */,
+				9A4A8F031D0C8F1800338B9C /* AppDelegate.m */,
+				9A4A8F051D0C8F1800338B9C /* MasterViewController.h */,
+				9A4A8F061D0C8F1800338B9C /* MasterViewController.m */,
+				9A4A8F081D0C8F1800338B9C /* DetailViewController.h */,
+				9A4A8F091D0C8F1800338B9C /* DetailViewController.m */,
+				9A4A8F0B1D0C8F1800338B9C /* Main.storyboard */,
+				9A4A8F0E1D0C8F1800338B9C /* Assets.xcassets */,
+				9A4A8F101D0C8F1800338B9C /* LaunchScreen.storyboard */,
+				9A4A8F131D0C8F1800338B9C /* Info.plist */,
+				9A4A8EFF1D0C8F1800338B9C /* Supporting Files */,
+			);
+			path = "open-source-osx-ci";
+			sourceTree = "<group>";
+		};
+		9A4A8EFF1D0C8F1800338B9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8F001D0C8F1800338B9C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A4A8F1B1D0C8F1800338B9C /* open-source-osx-ciTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8F1C1D0C8F1800338B9C /* open_source_osx_ciTests.m */,
+				9A4A8F1E1D0C8F1800338B9C /* Info.plist */,
+			);
+			path = "open-source-osx-ciTests";
+			sourceTree = "<group>";
+		};
+		9A4A8F261D0C8F1800338B9C /* open-source-osx-ciUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A8F271D0C8F1800338B9C /* open_source_osx_ciUITests.m */,
+				9A4A8F291D0C8F1800338B9C /* Info.plist */,
+			);
+			path = "open-source-osx-ciUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A4A8EFB1D0C8F1800338B9C /* open-source-osx-ci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4A8F2C1D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ci" */;
+			buildPhases = (
+				9A4A8EF81D0C8F1800338B9C /* Sources */,
+				9A4A8EF91D0C8F1800338B9C /* Frameworks */,
+				9A4A8EFA1D0C8F1800338B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "open-source-osx-ci";
+			productName = "open-source-osx-ci";
+			productReference = 9A4A8EFC1D0C8F1800338B9C /* open-source-osx-ci.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A4A8F171D0C8F1800338B9C /* open-source-osx-ciTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4A8F2F1D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ciTests" */;
+			buildPhases = (
+				9A4A8F141D0C8F1800338B9C /* Sources */,
+				9A4A8F151D0C8F1800338B9C /* Frameworks */,
+				9A4A8F161D0C8F1800338B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4A8F1A1D0C8F1800338B9C /* PBXTargetDependency */,
+			);
+			name = "open-source-osx-ciTests";
+			productName = "open-source-osx-ciTests";
+			productReference = 9A4A8F181D0C8F1800338B9C /* open-source-osx-ciTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A4A8F221D0C8F1800338B9C /* open-source-osx-ciUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4A8F321D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ciUITests" */;
+			buildPhases = (
+				9A4A8F1F1D0C8F1800338B9C /* Sources */,
+				9A4A8F201D0C8F1800338B9C /* Frameworks */,
+				9A4A8F211D0C8F1800338B9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4A8F251D0C8F1800338B9C /* PBXTargetDependency */,
+			);
+			name = "open-source-osx-ciUITests";
+			productName = "open-source-osx-ciUITests";
+			productReference = 9A4A8F231D0C8F1800338B9C /* open-source-osx-ciUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A4A8EF41D0C8F1800338B9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Marcelo Marra";
+				TargetAttributes = {
+					9A4A8EFB1D0C8F1800338B9C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9A4A8F171D0C8F1800338B9C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9A4A8EFB1D0C8F1800338B9C;
+					};
+					9A4A8F221D0C8F1800338B9C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9A4A8EFB1D0C8F1800338B9C;
+					};
+				};
+			};
+			buildConfigurationList = 9A4A8EF71D0C8F1800338B9C /* Build configuration list for PBXProject "open-source-osx-ci" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A4A8EF31D0C8F1800338B9C;
+			productRefGroup = 9A4A8EFD1D0C8F1800338B9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A4A8EFB1D0C8F1800338B9C /* open-source-osx-ci */,
+				9A4A8F171D0C8F1800338B9C /* open-source-osx-ciTests */,
+				9A4A8F221D0C8F1800338B9C /* open-source-osx-ciUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A4A8EFA1D0C8F1800338B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4A8F121D0C8F1800338B9C /* LaunchScreen.storyboard in Resources */,
+				9A4A8F0F1D0C8F1800338B9C /* Assets.xcassets in Resources */,
+				9A4A8F0D1D0C8F1800338B9C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A8F161D0C8F1800338B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A8F211D0C8F1800338B9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A4A8EF81D0C8F1800338B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4A8F041D0C8F1800338B9C /* AppDelegate.m in Sources */,
+				9A4A8F071D0C8F1800338B9C /* MasterViewController.m in Sources */,
+				9A4A8F011D0C8F1800338B9C /* main.m in Sources */,
+				9A4A8F0A1D0C8F1800338B9C /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A8F141D0C8F1800338B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4A8F1D1D0C8F1800338B9C /* open_source_osx_ciTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A8F1F1D0C8F1800338B9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4A8F281D0C8F1800338B9C /* open_source_osx_ciUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A4A8F1A1D0C8F1800338B9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4A8EFB1D0C8F1800338B9C /* open-source-osx-ci */;
+			targetProxy = 9A4A8F191D0C8F1800338B9C /* PBXContainerItemProxy */;
+		};
+		9A4A8F251D0C8F1800338B9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4A8EFB1D0C8F1800338B9C /* open-source-osx-ci */;
+			targetProxy = 9A4A8F241D0C8F1800338B9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A4A8F0B1D0C8F1800338B9C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A4A8F0C1D0C8F1800338B9C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A4A8F101D0C8F1800338B9C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A4A8F111D0C8F1800338B9C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A4A8F2A1D0C8F1800338B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A4A8F2B1D0C8F1800338B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A4A8F2D1D0C8F1800338B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "open-source-osx-ci/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oi.open-source-osx-ci";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A4A8F2E1D0C8F1800338B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "open-source-osx-ci/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oi.open-source-osx-ci";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A4A8F301D0C8F1800338B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "open-source-osx-ciTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oi.open-source-osx-ciTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/open-source-osx-ci.app/open-source-osx-ci";
+			};
+			name = Debug;
+		};
+		9A4A8F311D0C8F1800338B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "open-source-osx-ciTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oi.open-source-osx-ciTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/open-source-osx-ci.app/open-source-osx-ci";
+			};
+			name = Release;
+		};
+		9A4A8F331D0C8F1800338B9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "open-source-osx-ciUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oi.open-source-osx-ciUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "open-source-osx-ci";
+			};
+			name = Debug;
+		};
+		9A4A8F341D0C8F1800338B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "open-source-osx-ciUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "oi.open-source-osx-ciUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "open-source-osx-ci";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A4A8EF71D0C8F1800338B9C /* Build configuration list for PBXProject "open-source-osx-ci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4A8F2A1D0C8F1800338B9C /* Debug */,
+				9A4A8F2B1D0C8F1800338B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A4A8F2C1D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4A8F2D1D0C8F1800338B9C /* Debug */,
+				9A4A8F2E1D0C8F1800338B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A4A8F2F1D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ciTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4A8F301D0C8F1800338B9C /* Debug */,
+				9A4A8F311D0C8F1800338B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A4A8F321D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ciUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4A8F331D0C8F1800338B9C /* Debug */,
+				9A4A8F341D0C8F1800338B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A4A8EF41D0C8F1800338B9C /* Project object */;
+}
