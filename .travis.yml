@@ -21,3 +21,5 @@ env:
   - APP_NAME="open-source-osx-ci"
   - 'DEVELOPER_NAME="iPhone Developer: Roberto  Paldês (RV9KVT9336)"'
   - PROFILE_NAME="open-source-osx-ci"
+  - HOCKEY_APP_ID=5667f966114347fb99e9330d6097fefb
+  - HOCKEY_APP_TOKEN=1d47a026f9fb46dc9706ae5b8403d46b
