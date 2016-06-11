@@ -13,7 +13,7 @@ fi
 
 PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
 OUTPUTDIR="$PWD/build/Release-iphoneos"
-
+/usr/bin/gem install CFPropertyList
 echo "***************************"
 echo "*        PACKAGIN          *"
 echo "***************************"
