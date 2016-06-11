@@ -5,13 +5,14 @@ cache:
   - cocoapods
   - build  
 before_script:
+- cat ~/.ssh/id_rsa.pub
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/$APP_NAME.mobileprovision.enc -d -a -out scripts/profile/$APP_NAME.mobileprovision
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
 - openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
 - ./scripts/add-key.sh
 #- ./scripts/update-bundle.sh
 script:
-- ./scripts/xcbuild-safe.sh -project $APP_NAME.xcodeproj -scheme "$APP_NAME" -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO TESTFLIGHT_APP_TOKEN=$TESTFLIGHT_APP_TOKEN HOCKEY_APP_ID=$HOCKEY_APP_ID
+- ./scripts/xcbuild-safe.sh -project $APP_NAME.xcodeproj -scheme "$APP_NAME" -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 #- xctool test -project $APP_NAME.xcodeproj -scheme ${APP_NAME}Tests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 after_script:
 - ./scripts/remove-key.sh
