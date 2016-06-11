@@ -17,11 +17,11 @@ OUTPUTDIR="$PWD/build/Release-iphoneos"
 echo "***************************"
 echo "*        PACKAGIN          *"
 echo "***************************"
-xcodebuild -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release archive -archivePath $PWD/build/open-source-osx-ci.xcarchive
+xcodebuild -project $APP_NAME.xcodeproj -scheme $APP_NAME -sdk iphoneos -configuration Release archive -archivePath $PWD/build/open-source-osx-ci.xcarchive
 echo "***************************"
 echo "*        SIGNING          *"
 echo "***************************"
-xcodebuild -exportArchive -archivePath $PWD/build/$APP_NAME.xcarchive -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
+xcodebuild -exportArchive -archivePath $PWD/build/$APP_NAME.xcarchive -sdk iphoneos -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
 
 zip -r -9 "$OUTPUTDIR/$APP_NAME.app.dSYM.zip" "$OUTPUTDIR/$APP_NAME.app.dSYM"
 
