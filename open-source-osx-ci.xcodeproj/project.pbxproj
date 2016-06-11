@@ -221,6 +221,7 @@
 				TargetAttributes = {
 					9A4A8EFB1D0C8F1800338B9C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = P9HF8KRGJC;
 					};
 					9A4A8F171D0C8F1800338B9C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -446,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -461,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -537,6 +540,7 @@
 				9A4A8F2E1D0C8F1800338B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A4A8F2F1D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ciTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +549,7 @@
 				9A4A8F311D0C8F1800338B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A4A8F321D0C8F1800338B9C /* Build configuration list for PBXNativeTarget "open-source-osx-ciUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +558,7 @@
 				9A4A8F341D0C8F1800338B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

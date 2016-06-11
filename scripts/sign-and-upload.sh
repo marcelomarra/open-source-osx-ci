@@ -15,9 +15,13 @@ PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_
 OUTPUTDIR="$PWD/build/Release-iphoneos"
 
 echo "***************************"
-echo "*        Signing          *"
+echo "*        PACKAGIN          *"
 echo "***************************"
-xcrun -log -sdk iphoneos PackageApplication "$OUTPUTDIR/$APP_NAME.app" -o "$OUTPUTDIR/$APP_NAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
+xcodebuild -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release archive -archivePath $APP_NAME.xcarchive
+echo "***************************"
+echo "*        SIGNING          *"
+echo "***************************"
+xcodebuild -exportArchive -archivePath $PWD/build/$APP_NAME.xcarchive -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
 
 zip -r -9 "$OUTPUTDIR/$APP_NAME.app.dSYM.zip" "$OUTPUTDIR/$APP_NAME.app.dSYM"
 
