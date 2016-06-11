@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0730"
-   version = "1.3">
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -113,6 +113,15 @@
             <ActionContent
                title = "Run Script"
                scriptText = "${SOURCE_ROOT}/Crashlytics.framework/submit 516dcafb5f26d49313bad5d7eb0459c9a295e43b e0f12f3b3352e49a668b7c99731980c4da24c57f79e3b0f6d572f5a7bcf490c6 \&#10;-groupAliases testers \&#10;-notifications NO">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "9A4A8EFB1D0C8F1800338B9C"
+                     BuildableName = "open-source-osx-ci.app"
+                     BlueprintName = "open-source-osx-ci"
+                     ReferencedContainer = "container:open-source-osx-ci.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
             </ActionContent>
          </ExecutionAction>
       </PostActions>
