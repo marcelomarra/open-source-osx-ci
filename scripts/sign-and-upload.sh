@@ -17,7 +17,7 @@ OUTPUTDIR="$PWD/build/Release-iphoneos"
 echo "***************************"
 echo "*        PACKAGIN          *"
 echo "***************************"
-xcodebuild -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release archive -archivePath $APP_NAME.xcarchive
+xcodebuild -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release archive -archivePath $PWD/build/open-source-osx-ci.xcarchive
 echo "***************************"
 echo "*        SIGNING          *"
 echo "***************************"
