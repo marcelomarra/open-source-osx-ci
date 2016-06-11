@@ -21,7 +21,7 @@ echo "***************************"
 echo "***************************"
 echo "*        SIGNING          *"
 echo "***************************"
-./scripts/xcbuild-safe.sh -exportArchive -archivePath $PWD/build/$APP_NAME.xcarchive -sdk iphoneos -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
+./scripts/xcbuild-safe.sh -exportArchive -archivePath $PWD/build/$APP_NAME.xcarchive -sdk iphoneos -exportOptionsPlist exportOptions.plist -exportPath $OUTPUTDIR
 
 zip -r -9 "$OUTPUTDIR/$APP_NAME.app.dSYM.zip" "$OUTPUTDIR/$APP_NAME.app.dSYM"
 
