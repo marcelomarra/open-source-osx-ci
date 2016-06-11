@@ -1,0 +1,22 @@
+language: objective-c
+cache: bundler
+before_script:
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/profile/$APP_NAME.mobileprovision.enc -d -a -out scripts/profile/$APP_NAME.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.cer.enc -d -a -out scripts/certs/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in scripts/certs/dist.p12.enc -d -a -out scripts/certs/dist.p12
+- ./scripts/add-key.sh
+#- ./scripts/update-bundle.sh
+script:
+- xctool -project $APP_NAME.xcodeproj -scheme $APP_NAME -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO TESTFLIGHT_APP_TOKEN=$TESTFLIGHT_APP_TOKEN HOCKEY_APP_ID=$HOCKEY_APP_ID
+#- xctool test -project $APP_NAME.xcodeproj -scheme ${APP_NAME}Tests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+after_script:
+- ./scripts/remove-key.sh
+after_success:
+#- ./scripts/sign-and-upload.sh
+env:
+  global:
+  - secure: U/Lt7J8pOaVp6sTuJtx0AlsgRGyRf0F7GhZIHnELcpFNmpgDNqQQHqK7Ja+esIhWhYXavYen92WvfRKq+VWl/e2JHmZC840HyYj4Uq9g7P1BqSHT7Lp0clnHhnJHDdyR7bVg4zsnlNOb1s9GV30yTF+upUTE0rvRiHIPxidYA3e5mt9oewZcAR8uIbSgO3C6AOI+lS2lP+eg9oIDfNDFPaKRkCxRZORavBcR3OuiRqTx492KYqZVI8J+WXZxRGwNyho8P6PqWj9eI4CKav19MH4woZEf4Fm0Lgn3kCVrfM3pIM4nOKwHjNQ03QxGanKIX40wbI3iAF2m4lXvFkzIKze3O3TpE4/pa6rJMinU4vZcjB5tJvQ1CdLZHjOr8hcU0hjQSYtagN3nZ4cNXMtNjYKOfZBJdu3e2SUMDUw97/zqOrN7x6HPVSl14937ntjkFc16LWudeitds1m21ogB5WSHJxADHbC1o3AVtdfiKpig2lhmSsNKb6+eGUtcxlDznG3sEYjkDJgFiydU8dDXjfEDoznKjdWiPwkFNQdiEjChaWUKWFBR7eFvd0MUP2GeBF98KnLwLneGfDPzoP8KnRy+Cskw9rHaj75av3TDeByOrr6r+GnI6TGhNNHO96zF5Lse6Pmj+B5YQZCfcTn21OoDwZ/dISTidmE4g6fKE4o=
+  - secure: aJKjVyRGHVP215rBOPIhg2FV850wKpv+RKJUSzE4sWX2IH+BSgWhPE6LPqVrt6qQgWvO+ZoN62x/EMTmtTTXhtCL2AmnrG3U/h3aB5u67smVoAtPwnhizLTCaqP3NUIHGTH3b8hl7mQmuO8tZtHskFf2U2+cw+Dj7ZiWLyZYsh4vTdhrgkRnbHd/ZxnFLA7md/Ix4S6CJhphMUpdPjP2Vcd140AfKEiBaKCN4iBJ1Cf8Mcy9liaV2ggyROtWops4EaATpK26aCXvWma1FO0m0EiEwRY1au3ndR9+YLDqNCB6I8q4IxI6ybsKXdltunAD6zkkZqSg3nb+gYER4NclfTnhhpO4hHhWrDYX7YlAUKoHQXcGE7SPObUWMIxkDWyehFHQkTENwHAz09JcvkZFIqUXjLR8ujg94RAP1yEtPedeu4VtIhBEHfZSu5fcQkIRFWVIzy4yNDt7onYGO5a6oFZTWzWz0OytFv9EXQaamq5PZhzlpbX5QUi8feEGzHomBCOdzyU2yAR/7y/Dhi2HdAVCdPj1nX45EUsuNicJ2U2jlwpJ00Yizj9fT5khK/lexh38t2vqbPl3HjwEHIp+xT+OF9oU5q5LXRV+I8HKofI/llLW7EDihl9DL/BkbmKAQGYzG0/0HGqFJ8e5BgglUCShStM0fbdXmoTWT1Q7wsg=
+  - APP_NAME="open-source-osx-ci"
+  - 'DEVELOPER_NAME="iPhone Developer: Roberto  Paldês (RV9KVT9336)"'
+  - PROFILE_NAME="Marcelo_Marra"
